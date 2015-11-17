@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B30542161BFB60B900F71C3F /* NYEButtonAtom.m in Sources */ = {isa = PBXBuildFile; fileRef = B30542151BFB60B900F71C3F /* NYEButtonAtom.m */; };
 		B3428D5D1BFB330B007C8F0C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B3428D5C1BFB330B007C8F0C /* main.m */; };
 		B3428D601BFB330B007C8F0C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B3428D5F1BFB330B007C8F0C /* AppDelegate.m */; };
 		B3428D631BFB330B007C8F0C /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3428D621BFB330B007C8F0C /* MasterViewController.m */; };
@@ -16,6 +17,10 @@
 		B3428D6E1BFB330B007C8F0C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3428D6C1BFB330B007C8F0C /* LaunchScreen.storyboard */; };
 		B3428D791BFB330B007C8F0C /* patternsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B3428D781BFB330B007C8F0C /* patternsTests.m */; };
 		B3428D841BFB330B007C8F0C /* patternsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B3428D831BFB330B007C8F0C /* patternsUITests.m */; };
+		B3812ADD1BFBB7DB000FB166 /* NYELabelAtom.m in Sources */ = {isa = PBXBuildFile; fileRef = B3812ADC1BFBB7DB000FB166 /* NYELabelAtom.m */; };
+		B3812AE01BFBB94F000FB166 /* UIView+atoms.m in Sources */ = {isa = PBXBuildFile; fileRef = B3812ADF1BFBB94F000FB166 /* UIView+atoms.m */; };
+		B3812AE31BFBC266000FB166 /* NYEPatternData.m in Sources */ = {isa = PBXBuildFile; fileRef = B3812AE21BFBC266000FB166 /* NYEPatternData.m */; };
+		B3812AE61BFBD3E7000FB166 /* NYEColorsAtom.m in Sources */ = {isa = PBXBuildFile; fileRef = B3812AE51BFBD3E7000FB166 /* NYEColorsAtom.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B30542141BFB60B900F71C3F /* NYEButtonAtom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NYEButtonAtom.h; sourceTree = "<group>"; };
+		B30542151BFB60B900F71C3F /* NYEButtonAtom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NYEButtonAtom.m; sourceTree = "<group>"; };
 		B3428D581BFB330B007C8F0C /* patterns.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = patterns.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3428D5C1BFB330B007C8F0C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B3428D5E1BFB330B007C8F0C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -54,6 +61,14 @@
 		B3428D7F1BFB330B007C8F0C /* patternsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = patternsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3428D831BFB330B007C8F0C /* patternsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = patternsUITests.m; sourceTree = "<group>"; };
 		B3428D851BFB330B007C8F0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B3812ADB1BFBB7DB000FB166 /* NYELabelAtom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NYELabelAtom.h; path = Atoms/NYELabelAtom.h; sourceTree = "<group>"; };
+		B3812ADC1BFBB7DB000FB166 /* NYELabelAtom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NYELabelAtom.m; path = Atoms/NYELabelAtom.m; sourceTree = "<group>"; };
+		B3812ADE1BFBB94F000FB166 /* UIView+atoms.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+atoms.h"; path = "Atoms/UIView+atoms.h"; sourceTree = "<group>"; };
+		B3812ADF1BFBB94F000FB166 /* UIView+atoms.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+atoms.m"; path = "Atoms/UIView+atoms.m"; sourceTree = "<group>"; };
+		B3812AE11BFBC266000FB166 /* NYEPatternData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NYEPatternData.h; sourceTree = "<group>"; };
+		B3812AE21BFBC266000FB166 /* NYEPatternData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NYEPatternData.m; sourceTree = "<group>"; };
+		B3812AE41BFBD3E7000FB166 /* NYEColorsAtom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NYEColorsAtom.h; path = Atoms/NYEColorsAtom.h; sourceTree = "<group>"; };
+		B3812AE51BFBD3E7000FB166 /* NYEColorsAtom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NYEColorsAtom.m; path = Atoms/NYEColorsAtom.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +119,7 @@
 		B3428D5A1BFB330B007C8F0C /* patterns */ = {
 			isa = PBXGroup;
 			children = (
+				B3428D911BFB376A007C8F0C /* Atoms */,
 				B3428D5E1BFB330B007C8F0C /* AppDelegate.h */,
 				B3428D5F1BFB330B007C8F0C /* AppDelegate.m */,
 				B3428D611BFB330B007C8F0C /* MasterViewController.h */,
@@ -115,6 +131,8 @@
 				B3428D6C1BFB330B007C8F0C /* LaunchScreen.storyboard */,
 				B3428D6F1BFB330B007C8F0C /* Info.plist */,
 				B3428D5B1BFB330B007C8F0C /* Supporting Files */,
+				B3812AE11BFBC266000FB166 /* NYEPatternData.h */,
+				B3812AE21BFBC266000FB166 /* NYEPatternData.m */,
 			);
 			path = patterns;
 			sourceTree = "<group>";
@@ -143,6 +161,21 @@
 				B3428D851BFB330B007C8F0C /* Info.plist */,
 			);
 			path = patternsUITests;
+			sourceTree = "<group>";
+		};
+		B3428D911BFB376A007C8F0C /* Atoms */ = {
+			isa = PBXGroup;
+			children = (
+				B30542141BFB60B900F71C3F /* NYEButtonAtom.h */,
+				B30542151BFB60B900F71C3F /* NYEButtonAtom.m */,
+				B3812ADB1BFBB7DB000FB166 /* NYELabelAtom.h */,
+				B3812ADC1BFBB7DB000FB166 /* NYELabelAtom.m */,
+				B3812ADE1BFBB94F000FB166 /* UIView+atoms.h */,
+				B3812ADF1BFBB94F000FB166 /* UIView+atoms.m */,
+				B3812AE41BFBD3E7000FB166 /* NYEColorsAtom.h */,
+				B3812AE51BFBD3E7000FB166 /* NYEColorsAtom.m */,
+			);
+			name = Atoms;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,11 +240,13 @@
 		B3428D501BFB330B007C8F0C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = NYE;
 				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = "John Nye";
 				TargetAttributes = {
 					B3428D571BFB330B007C8F0C = {
 						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = 6MX23WG83P;
 					};
 					B3428D731BFB330B007C8F0C = {
 						CreatedOnToolsVersion = 7.1.1;
@@ -277,8 +312,13 @@
 			files = (
 				B3428D601BFB330B007C8F0C /* AppDelegate.m in Sources */,
 				B3428D631BFB330B007C8F0C /* MasterViewController.m in Sources */,
+				B3812ADD1BFBB7DB000FB166 /* NYELabelAtom.m in Sources */,
+				B3812AE01BFBB94F000FB166 /* UIView+atoms.m in Sources */,
 				B3428D5D1BFB330B007C8F0C /* main.m in Sources */,
 				B3428D661BFB330B007C8F0C /* DetailViewController.m in Sources */,
+				B3812AE61BFBD3E7000FB166 /* NYEColorsAtom.m in Sources */,
+				B30542161BFB60B900F71C3F /* NYEButtonAtom.m in Sources */,
+				B3812AE31BFBC266000FB166 /* NYEPatternData.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,6 +457,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = patterns/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = net.johnnye.patterns;
@@ -428,6 +469,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = patterns/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = net.johnnye.patterns;
@@ -502,6 +544,7 @@
 				B3428D8A1BFB330B007C8F0C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B3428D8B1BFB330B007C8F0C /* Build configuration list for PBXNativeTarget "patternsTests" */ = {
 			isa = XCConfigurationList;
@@ -510,6 +553,7 @@
 				B3428D8D1BFB330B007C8F0C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B3428D8E1BFB330B007C8F0C /* Build configuration list for PBXNativeTarget "patternsUITests" */ = {
 			isa = XCConfigurationList;
@@ -518,6 +562,7 @@
 				B3428D901BFB330B007C8F0C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

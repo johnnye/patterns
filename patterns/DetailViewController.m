@@ -7,6 +7,8 @@
 //
 
 #import "DetailViewController.h"
+#import "NYEButtonAtom.h"
+#import <objc/runtime.h>
 
 @interface DetailViewController ()
 
@@ -30,12 +32,22 @@
     if (self.detailItem) {
         self.detailDescriptionLabel.text = [self.detailItem description];
     }
+
 }
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    UIButton *button = [[NYEButtonAtom new] positiveActionWithTitle:@"title"];
+    
+    [self.view addSubview:button];
+    self.view.backgroundColor = [UIColor darkGrayColor];
+    [self.view bringSubviewToFront:button];
+
+    self.detailDescriptionLabel.text = NSStringFromSelector(@selector(positiveActionWithTitle:));
+    
     // Do any additional setup after loading the view, typically from a nib.
-    [self configureView];
+    //[self configureView];
 }
 
 - (void)didReceiveMemoryWarning {
