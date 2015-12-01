@@ -13,4 +13,5 @@
 -(UIColor *)positiveColor;
 -(UIColor *)negativeColor;
 -(UIColor *)neutralColor;
+-(UIColor *)positiveBlue;
 @end

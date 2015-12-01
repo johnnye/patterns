@@ -9,5 +9,5 @@
 #import "NYEPatternData.h"
 
 @implementation NYEPatternData
-//@synthesize className, methodName, object;
+
 @end

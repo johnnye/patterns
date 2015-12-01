@@ -73,4 +73,13 @@
     return newButton;
 }
 
+-(UIButton *)settingsButton {
+    UIButton *settingsButton = [[UIButton alloc] initWithFrame:CGRectMake(100, 100, 100, 30)];
+    UIColor *blue = [[NYEColorsAtom new] positiveBlue];
+    [settingsButton setTintColor:blue];
+    [settingsButton setTitle:NSLocalizedString(@"Settings", @"Settings") forState:UIControlStateNormal];
+    [settingsButton setTitleColor:blue forState:UIControlStateNormal];
+    return settingsButton;
+}
+
 @end

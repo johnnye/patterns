@@ -19,4 +19,9 @@
     return [UIColor lightGrayColor];
 }
 
+-(UIColor *)positiveBlue {
+    return [UIColor colorWithRed:0.25 green:0.53 blue:1 alpha:1];
+}
+
+
 @end

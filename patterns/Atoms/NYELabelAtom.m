@@ -16,7 +16,7 @@
     }
     UIFont * customFont = [UIFont fontWithName:@"Zapfino" size:12]; //custom font
     
-    CGSize maximumLabelSize = CGSizeMake(310, 30);
+    CGSize maximumLabelSize = CGSizeMake(310, 40);
     CGRect textRect = [title boundingRectWithSize:maximumLabelSize
                                              options:(NSStringDrawingUsesFontLeading)
                                           attributes:@{NSFontAttributeName: customFont}

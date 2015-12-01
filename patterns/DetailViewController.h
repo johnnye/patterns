@@ -7,10 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "NYEPatternData.h"
+#import "UIView+atoms.h"
 
 @interface DetailViewController : UIViewController
 
-@property (strong, nonatomic) id detailItem;
+@property (strong, nonatomic, retain) NYEPatternData *detailItem;
 @property (weak, nonatomic) IBOutlet UILabel *detailDescriptionLabel;
 
 @end

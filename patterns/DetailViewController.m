@@ -7,7 +7,6 @@
 //
 
 #import "DetailViewController.h"
-#import "NYEButtonAtom.h"
 #import <objc/runtime.h>
 
 @interface DetailViewController ()
@@ -21,8 +20,6 @@
 - (void)setDetailItem:(id)newDetailItem {
     if (_detailItem != newDetailItem) {
         _detailItem = newDetailItem;
-            
-        // Update the view.
         [self configureView];
     }
 }
@@ -30,24 +27,32 @@
 - (void)configureView {
     // Update the user interface for the detail item.
     if (self.detailItem) {
-        self.detailDescriptionLabel.text = [self.detailItem description];
+        NSString *call = [NSString stringWithFormat:@"[%@ %@]", self.detailItem.className, self.detailItem.methodName];
+        
+        id obj = [[NSClassFromString(self.detailItem.className) alloc] init];
+        NSObject *displayObject = [obj performSelector:NSSelectorFromString(self.detailItem.methodName) withObject:nil];
+        
+        self.detailDescriptionLabel.text = call;
+        
+        if ([displayObject isKindOfClass:[UIView class]]){
+            
+            [(UIView *)displayObject newOrigin:CGPointMake(100, 100)];
+            
+            [self.view addSubview:(UIView *)displayObject];
+            [self.view bringSubviewToFront:(UIView *)displayObject];
+        }
+        
+        if ([displayObject isKindOfClass:[UIColor class]]){
+            self.view.backgroundColor = (UIColor *)displayObject;
+        } else {
+            self.view.backgroundColor = [UIColor whiteColor];
+        }
     }
-
 }
-
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    UIButton *button = [[NYEButtonAtom new] positiveActionWithTitle:@"title"];
-    
-    [self.view addSubview:button];
-    self.view.backgroundColor = [UIColor darkGrayColor];
-    [self.view bringSubviewToFront:button];
-
-    self.detailDescriptionLabel.text = NSStringFromSelector(@selector(positiveActionWithTitle:));
-    
-    // Do any additional setup after loading the view, typically from a nib.
-    //[self configureView];
+    [self configureView];
 }
 
 - (void)didReceiveMemoryWarning {
